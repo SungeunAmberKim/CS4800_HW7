@@ -1,6 +1,7 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Scanner;
 public class Driver {
     public static void main(String[] args) {
@@ -8,6 +9,18 @@ public class Driver {
         proxy();
     }
     public static void proxy() {
+        RealSongService songService = new RealSongService();
+        SongServiceProxy songServiceProxy = new SongServiceProxy(songService);
+
+        // search by ID
+        Song songByID = songServiceProxy.searchById(1);
+        System.out.println(songByID);
+        // search by title
+        List<Song> songByTitle = songServiceProxy.searchByTitle("title");
+        System.out.println(songByTitle);
+        // search by album
+        List<Song> songByAlbum = songServiceProxy.searchByAlbum("album 3");
+        System.out.println(songByAlbum);
 
     }
     public static void flyweight() {

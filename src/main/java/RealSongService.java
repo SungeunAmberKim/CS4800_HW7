@@ -8,11 +8,11 @@ public class RealSongService implements SongService {
 
     public RealSongService() {
         songs = new HashMap<>();
-        songs.put(1, new Song("title", "artist 1", "album 1", 5));
-        songs.put(2, new Song("title", "artist 2", "album 2", 10));
-        songs.put(3, new Song("title", "artist 3", "album 3", 15));
-        songs.put(4, new Song("music", "artist 4", "album 3", 20));
-        songs.put(5, new Song("song", "artist 5", "album 5", 25));
+        songs.put(1, new Song(1, "title", "artist 1", "album 1", 5));
+        songs.put(2, new Song(2, "title", "artist 2", "album 2", 10));
+        songs.put(3, new Song(3, "title", "artist 3", "album 3", 15));
+        songs.put(4, new Song(4, "music", "artist 4", "album 3", 20));
+        songs.put(5, new Song(5, "song", "artist 5", "album 5", 25));
     }
 
     @Override

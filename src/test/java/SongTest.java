@@ -4,7 +4,7 @@ import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 public class SongTest {
-    Song song = new Song("title","artist","album", 10);
+    Song song = new Song(0,"title","artist","album", 10);
 
     @Test
     public void testGetTitle() {
