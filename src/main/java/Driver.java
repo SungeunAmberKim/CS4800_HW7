@@ -2,8 +2,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Scanner;
-public class FlyweightDriver {
+public class Driver {
     public static void main(String[] args) {
+        flyweight();
+        proxy();
+    }
+    public static void proxy() {
+
+    }
+    public static void flyweight() {
         CharacterFactory factory = new CharacterFactory();
         CharProperty prop1 = new CharProperty("Arial", "Red", 12);
         CharProperty prop2 = new CharProperty("Calibri", "Blue", 13);
