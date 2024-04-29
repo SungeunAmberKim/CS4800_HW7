@@ -17,5 +17,4 @@ public class CharProperty {
     public int getSize() {
         return size;
     }
-
 }
